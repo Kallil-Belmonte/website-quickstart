@@ -1,0 +1,223 @@
+/*
+Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+/*==============================
+HELPER CLASSES
+==============================*/
+
+/* TEXT CONTINUED */
+
+.text-continued {
+  @extend %text-continued;
+}
+
+
+/* CENTER */
+
+.center-absolute {
+	@extend %center-absolute;
+}
+
+/* Horizontal center */
+
+.center-absolute-x {
+  @extend %center-absolute-x;
+}
+
+/* Vertical center */
+
+.center-absolute-y {
+  @extend %center-absolute-y;
+}
+
+
+/* BACKGROUND IMAGE */
+
+/* Contain */
+
+.bg-image-contain {
+  @extend %background-image-contain;
+}
+
+/* Cover */
+
+.bg-image-cover {
+  @extend %background-image-cover;
+}
+
+
+/* DISABLES CURSOR ACTIONS ON THE ELEMENT */
+
+.disabled-cursor {
+  pointer-events: none;
+}
+
+
+/* FONTS */
+
+/* NOME DA FONTE */
+
+@font-face {
+  font-family: 'Nome da Fonte';
+  src: url('../fonts/nome-da-fonte/webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/nome-da-fonte/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/nome-da-fonte/webfont.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/nome-da-fonte/webfont.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/nome-da-fonte/webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/nome-da-fonte/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+/* SAN FRANCISCO */
+
+/* Ultra Light */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/* Thin */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/* Regular */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/* Medium */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/* Semi Bold */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/* Bold */
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("../fonts/san-francisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+
+/* HTML */
+
+html {
+  font-size: 1em;
+}
+
+
+/* BODY */
+
+body {
+  font-family: 'Nome da Fonte', Arial, sans-serif;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  @include square(7px);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #C1C8CC;
+}
+
+
+/* TITLE */
+
+.page-title {
+  font-size: $page-title-size;
+  color: $page-title-color;
+}
+
+.page-subtitle {
+  font-size: $page-subtitle-size;
+  color: $page-subtitle-color;
+}
+
+.section-title {
+  font-size: $title-size;
+  color: $title-color;
+}
+
+.section-subtitle {
+  font-size: $subtitle-size;
+  color: $subtitle-color;
+}
+
+
+/* FORMS */
+
+/* Input */
+
+.form-control,
+.form-control:focus {
+  border-color: #D0D7E5;
+  box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #C5CBD8;
+}
+
+.form-control::-moz-placeholder {
+  color: #C5CBD8;
+}
+
+/* Textarea */
+
+textarea {
+  max-width: 100%;
+}
+
+
+/* CONTENT BOX */
+
+.content-box {
+  background-color: $content-box-bg;
+  padding: $content-box-padding;
+  border-radius: $border-radius-sm;
+  margin-bottom: 20px;
+
+  > .title {
+    margin: 0 0 20px;
+  }
+}
