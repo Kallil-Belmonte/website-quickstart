@@ -1,4 +1,4 @@
-//==============================
+﻿//==============================
 // GLOBAL VARIABLES
 //==============================
 var menuHeight = $('.main-menu').outerHeight();
@@ -193,7 +193,7 @@ function widthChange(mediaQuery) {
 }
 
 widthChange(mediaQuery);
-mediaQuery.addListener(WidthChange);
+mediaQuery.addListener(widthChange);
 
 
 // Toggle do menu hamburguer
