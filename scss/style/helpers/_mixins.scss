@@ -20,15 +20,6 @@
 }
 
 
-// OPACITY
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  // IE8 filter
-  $opacity-ie: ($opacity * 100);
-  filter: alpha(opacity=$opacity-ie);
-}
-
-
 // POSITION
 @mixin position($position: static, $top: auto, $right: auto, $bottom: auto, $left: auto, $z-index: auto) {
   position: $position;
