@@ -1,4 +1,4 @@
-This is a simple quickstart website with just the basics.
+This is a simple website quickstart with just the basics.
 
 ## Codes
 
