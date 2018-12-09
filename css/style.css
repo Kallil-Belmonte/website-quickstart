@@ -199,17 +199,17 @@ PRETTY CHECKBOX
 /* PRIMARY */
 
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
-  background-color: $brand-primary !important;
+  background-color: $primary !important;
 }
 
 .pretty input:checked ~ .state.p-primary label:after,
 .pretty.p-toggle .state.p-primary label:after {
-  background-color: $brand-primary !important;
+  background-color: $primary !important;
 }
 
 .pretty input:checked ~ .state.p-primary-o label:before,
 .pretty.p-toggle .state.p-primary-o label:before {
-  border-color: $brand-primary;
+  border-color: $primary;
 }
 
 .pretty input:checked ~ .state.p-primary-o .icon,
@@ -218,21 +218,21 @@ PRETTY CHECKBOX
 .pretty.p-toggle .state.p-primary-o .icon,
 .pretty.p-toggle .state.p-primary-o .svg,
 .pretty.p-toggle .state.p-primary-o svg {
-  color: $brand-primary;
-  stroke: $brand-primary;
+  color: $primary;
+  stroke: $primary;
 }
 
 .pretty.p-switch input:checked ~ .state.p-primary:before {
-  border-color: $brand-primary;
+  border-color: $primary;
 }
 
 .pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
-  background-color: $brand-primary !important;
+  background-color: $primary !important;
 }
 
 .pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
-  border-color: darken($brand-primary, 15%);
-  background-color: darken($brand-primary, 15%) !important;
+  border-color: darken($primary, 15%);
+  background-color: darken($primary, 15%) !important;
 }
 
 /* SUCCESS */
@@ -692,8 +692,8 @@ a:focus {
 /* btn-primary */
 
 .btn-primary {
-  background-color: $brand-primary;
-  border-color: $brand-primary;
+  background-color: $primary;
+  border-color: $primary;
 }
 
 .btn-primary:hover,
@@ -704,33 +704,33 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus {
-  background-color: $brand-primary-strong;
-  border-color: $brand-primary-strong;
+  background-color: $primary-strong;
+  border-color: $primary-strong;
 }
 
 .btn-outline-primary {
-  color: $brand-primary;
-  border-color: $brand-primary;
+  color: $primary;
+  border-color: $primary;
 }
 
 .btn-outline-primary:hover {
   color: #FFF;
-  background-color: $brand-primary-strong;
-  border-color: $brand-primary-strong;
+  background-color: $primary-strong;
+  border-color: $primary-strong;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
-  background-color: $brand-primary-strong;
-  border-color: $brand-primary-strong;
+  background-color: $primary-strong;
+  border-color: $primary-strong;
 }
 
 /* btn-secondary */
 
 .btn-secondary {
-  background-color: $brand-secondary;
-  border-color: $brand-secondary;
+  background-color: $secondary;
+  border-color: $secondary;
 }
 
 .btn-secondary:hover,
@@ -741,26 +741,26 @@ a:focus {
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-secondary.dropdown-toggle,
 .show > .btn-secondary.dropdown-toggle:focus {
-  background-color: $brand-secondary-strong;
-  border-color: $brand-secondary-strong;
+  background-color: $secondary-strong;
+  border-color: $secondary-strong;
 }
 
 .btn-outline-secondary {
-  color: $brand-secondary;
-  border-color: $brand-secondary;
+  color: $secondary;
+  border-color: $secondary;
 }
 
 .btn-outline-secondary:hover {
   color: #FFF;
-  background-color: $brand-secondary-strong;
-  border-color: $brand-secondary-strong;
+  background-color: $secondary-strong;
+  border-color: $secondary-strong;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .btn-outline-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  background-color: $brand-secondary-strong;
-  border-color: $brand-secondary-strong;
+  background-color: $secondary-strong;
+  border-color: $secondary-strong;
 }
 
 /* btn-success */
@@ -1006,13 +1006,13 @@ a:focus {
 /* alert-primary */
 
 .alert-primary {
-  background-color: $brand-primary;
+  background-color: $primary;
 }
 
 /* alert-secondary */
 
 .alert-secondary {
-  background-color: $brand-secondary;
+  background-color: $secondary;
 }
 
 /* alert-success */
@@ -1067,13 +1067,13 @@ a:focus {
 /* badge-primary */
 
 .badge-primary {
-  background-color: $brand-primary;
+  background-color: $primary;
 }
 
 /* badge-secondary */
 
 .badge-secondary {
-  background-color: $brand-secondary;
+  background-color: $secondary;
 }
 
 /* badge-success */
