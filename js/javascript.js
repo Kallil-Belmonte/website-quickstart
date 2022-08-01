@@ -1,7 +1,7 @@
 ﻿//==============================
 // GLOBAL VARIABLES
 //==============================
-var menuHeight = $('.main-menu').outerHeight();
+let menuHeight = $('.main-menu').outerHeight();
 
 
 //==============================
