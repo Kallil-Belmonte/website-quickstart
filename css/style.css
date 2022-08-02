@@ -10,6 +10,15 @@ Extra extra large (xxl): ≥1400px
 */
 
 /*==============================
+VARIABLES
+==============================*/
+
+:root {
+  --primary: '#FFFFFF';
+  --secondary: '#000000';
+}
+
+/*==============================
 HELPER CLASSES
 ==============================*/
 
@@ -195,17 +204,17 @@ PRETTY CHECKBOX
 /* PRIMARY */
 
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
-  background-color: $primary !important;
+  background-color: var(--primary) !important;
 }
 
 .pretty input:checked ~ .state.p-primary label:after,
 .pretty.p-toggle .state.p-primary label:after {
-  background-color: $primary !important;
+  background-color: var(--primary) !important;
 }
 
 .pretty input:checked ~ .state.p-primary-o label:before,
 .pretty.p-toggle .state.p-primary-o label:before {
-  border-color: $primary;
+  border-color: var(--primary);
 }
 
 .pretty input:checked ~ .state.p-primary-o .icon,
@@ -214,21 +223,21 @@ PRETTY CHECKBOX
 .pretty.p-toggle .state.p-primary-o .icon,
 .pretty.p-toggle .state.p-primary-o .svg,
 .pretty.p-toggle .state.p-primary-o svg {
-  color: $primary;
-  stroke: $primary;
+  color: var(--primary);
+  stroke: var(--primary);
 }
 
 .pretty.p-switch input:checked ~ .state.p-primary:before {
-  border-color: $primary;
+  border-color: var(--primary);
 }
 
 .pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
-  background-color: $primary !important;
+  background-color: var(--primary) !important;
 }
 
 .pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
-  border-color: darken($primary, 15%);
-  background-color: darken($primary, 15%) !important;
+  border-color: darken(var(--primary), 15%);
+  background-color: darken(var(--primary), 15%) !important;
 }
 
 /* SUCCESS */
@@ -441,7 +450,7 @@ TASTY CSS ANIMATED HAMBURGERS
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
+  content: '';
   display: block;
 }
 
@@ -544,17 +553,13 @@ GENERAL
 /* NOME DA FONTE */
 
 @font-face {
-  font-family: "Nome da Fonte";
-  src: url("../fonts/nome-da-fonte/webfont.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/nome-da-fonte/webfont.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/nome-da-fonte/webfont.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/nome-da-fonte/webfont.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("../fonts/nome-da-fonte/webfont.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/nome-da-fonte/webfont.svg#svgFontName") format("svg"); /* Legacy iOS */
+  font-family: 'Nome da Fonte';
+  src: url('../assets/fonts/nome-da-fonte/webfont.eot'); /* IE9 Compat Modes */
+  src: url('../assets/fonts/nome-da-fonte/webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../assets/fonts/nome-da-fonte/webfont.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../assets/fonts/nome-da-fonte/webfont.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../assets/fonts/nome-da-fonte/webfont.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('../assets/fonts/nome-da-fonte/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 /* NOME DA FONTE */
@@ -562,55 +567,55 @@ GENERAL
 /* Ultra Light */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 100;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-ultralight-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-ultralight-webfont.woff');
 }
 
 /* Thin */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 200;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-thin-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-thin-webfont.woff');
 }
 
 /* Regular */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 400;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-regular-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-regular-webfont.woff');
 }
 
 /* Medium */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 500;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-medium-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-medium-webfont.woff');
 }
 
 /* Semi Bold */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 600;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-semibold-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-semibold-webfont.woff');
 }
 
 /* Bold */
 
 @font-face {
-  font-family: "San Francisco";
+  font-family: 'San Francisco';
   font-weight: 700;
-  src: url("../fonts/nome-da-fonte/nome-da-fonte-bold-webfont.woff");
+  src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-bold-webfont.woff');
 }
 
 /* BODY */
 
 body {
-  font-family: "Nome da Fonte", Arial, sans-serif;
+  font-family: 'Nome da Fonte', Arial, sans-serif;
 }
 
 /* SCROLLBAR */
@@ -666,8 +671,8 @@ a:focus {
 /* btn-primary */
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-primary:hover,
@@ -678,33 +683,33 @@ a:focus {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle,
 .show > .btn-primary.dropdown-toggle:focus {
-  background-color: $primary-strong;
-  border-color: $primary-strong;
+  background-color: var(--primary)-strong;
+  border-color: var(--primary)-strong;
 }
 
 .btn-outline-primary {
-  color: $primary;
-  border-color: $primary;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: $primary-strong;
-  border-color: $primary-strong;
+  background-color: var(--primary)-strong;
+  border-color: var(--primary)-strong;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
-  background-color: $primary-strong;
-  border-color: $primary-strong;
+  background-color: var(--primary)-strong;
+  border-color: var(--primary)-strong;
 }
 
 /* btn-secondary */
 
 .btn-secondary {
-  background-color: $secondary;
-  border-color: $secondary;
+  background-color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .btn-secondary:hover,
@@ -715,26 +720,26 @@ a:focus {
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-secondary.dropdown-toggle,
 .show > .btn-secondary.dropdown-toggle:focus {
-  background-color: $secondary-strong;
-  border-color: $secondary-strong;
+  background-color: var(--secondary)-strong;
+  border-color: var(--secondary)-strong;
 }
 
 .btn-outline-secondary {
-  color: $secondary;
-  border-color: $secondary;
+  color: var(--secondary);
+  border-color: var(--secondary);
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: $secondary-strong;
-  border-color: $secondary-strong;
+  background-color: var(--secondary)-strong;
+  border-color: var(--secondary)-strong;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .btn-outline-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  background-color: $secondary-strong;
-  border-color: $secondary-strong;
+  background-color: var(--secondary)-strong;
+  border-color: var(--secondary)-strong;
 }
 
 /* btn-success */
@@ -980,13 +985,13 @@ a:focus {
 /* alert-primary */
 
 .alert-primary {
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 /* alert-secondary */
 
 .alert-secondary {
-  background-color: $secondary;
+  background-color: var(--secondary);
 }
 
 /* alert-success */
@@ -1041,13 +1046,13 @@ a:focus {
 /* badge-primary */
 
 .badge-primary {
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 /* badge-secondary */
 
 .badge-secondary {
-  background-color: $secondary;
+  background-color: var(--secondary);
 }
 
 /* badge-success */
@@ -1093,22 +1098,22 @@ a:focus {
   background-color: #000;
 }
 
-.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.bs-tooltip-auto[x-placement^='top'] .arrow::before,
 .bs-tooltip-top .arrow::before {
   border-top-color: #000;
 }
 
-.bs-tooltip-auto[x-placement^="right"] .arrow::before,
+.bs-tooltip-auto[x-placement^='right'] .arrow::before,
 .bs-tooltip-right .arrow::before {
   border-right-color: #000;
 }
 
-.bs-tooltip-auto[x-placement^="bottom"] .arrow::before,
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
 .bs-tooltip-bottom .arrow::before {
   border-bottom-color: #000;
 }
 
-.bs-tooltip-auto[x-placement^="left"] .arrow::before,
+.bs-tooltip-auto[x-placement^='left'] .arrow::before,
 .bs-tooltip-left .arrow::before {
   border-left-color: #000;
 }
@@ -1131,8 +1136,8 @@ a:focus {
   color: #c5cbd8;
 }
 
-.form-control[type="number"]::-webkit-inner-spin-button,
-.form-control[type="number"]::-webkit-outer-spin-button {
+.form-control[type='number']::-webkit-inner-spin-button,
+.form-control[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1187,7 +1192,7 @@ FOOTER
 }
 
 .social-networks a::before {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 100%;
@@ -1198,26 +1203,26 @@ FOOTER
 
 /* Facebook */
 
-.social-networks a[href*="facebook.com"]::before {
-  background-image: url("../img/icons/social-networks/facebook.svg");
+.social-networks a[href*='facebook.com']::before {
+  background-image: url('../img/icons/social-networks/facebook.svg');
 }
 
 /* Twitter */
 
-.social-networks a[href*="twitter.com"]::before {
-  background-image: url("../img/icons/social-networks/twitter.svg");
+.social-networks a[href*='twitter.com']::before {
+  background-image: url('../img/icons/social-networks/twitter.svg');
 }
 
 /* Instagram */
 
-.social-networks a[href*="instagram.com"]::before {
-  background-image: url("../img/icons/social-networks/instagram.svg");
+.social-networks a[href*='instagram.com']::before {
+  background-image: url('../img/icons/social-networks/instagram.svg');
 }
 
 /* Linkedin */
 
-.social-networks a[href*="linkedin.com"]::before {
-  background-image: url("../img/icons/social-networks/linkedin.svg");
+.social-networks a[href*='linkedin.com']::before {
+  background-image: url('../img/icons/social-networks/linkedin.svg');
 }
 
 /*============================== HOME PAGE ==============================*/
