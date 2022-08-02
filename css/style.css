@@ -1204,25 +1204,25 @@ FOOTER
 /* Facebook */
 
 .social-networks a[href*='facebook.com']::before {
-  background-image: url('../img/icons/social-networks/facebook.svg');
+  background-image: url('../assets/icons/social-networks/facebook.svg');
 }
 
 /* Twitter */
 
 .social-networks a[href*='twitter.com']::before {
-  background-image: url('../img/icons/social-networks/twitter.svg');
+  background-image: url('../assets/icons/social-networks/twitter.svg');
 }
 
 /* Instagram */
 
 .social-networks a[href*='instagram.com']::before {
-  background-image: url('../img/icons/social-networks/instagram.svg');
+  background-image: url('../assets/icons/social-networks/instagram.svg');
 }
 
 /* Linkedin */
 
 .social-networks a[href*='linkedin.com']::before {
-  background-image: url('../img/icons/social-networks/linkedin.svg');
+  background-image: url('../assets/icons/social-networks/linkedin.svg');
 }
 
 /*============================== HOME PAGE ==============================*/
