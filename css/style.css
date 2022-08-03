@@ -657,7 +657,7 @@ a:focus {
 .btn:not(:disabled):not(.disabled):active,
 .show > .btn.dropdown-toggle {
   box-shadow: none !important;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 /* btn-link */
