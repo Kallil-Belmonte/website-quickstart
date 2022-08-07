@@ -72,31 +72,54 @@
   </head>
 
   <body>
-    <button class="hamburger hamburger--slider" type="button">
-      <div class="hamburger-box">
-        <div class="hamburger-inner"></div>
-      </div>
-    </button>
-
-    <a id="see-more" href="#home">
-      <div class="scroll-mouse">
-        <div class="scroll-action"></div>
-      </div>
-    </a>
-
     <!--====================
     HEADER
     ====================-->
-    <header></header>
+    <header>
+      <button id="menu-button" class="hamburger hamburger--slider" type="button" aria-controls="menu">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </button>
+
+      <div class="container">
+        <div class="menu flex-vertical-center" role="menu" aria-labelledby="menu-button">
+          <img class="logo" alt="Mysterity" src="assets/images/logotype.svg" />
+
+          <nav class="nav-items">
+            <a href="#" role="menuitem">Item</a>
+            <a href="#" role="menuitem">Item</a>
+          </nav>
+        </div>
+      </div>
+    </header>
     <!--====================
     END HEADER
     ====================-->
 
     <main>
       <!--====================
+      HERO
+      ====================-->
+      <section id="hero">
+        <h1 role="heading" aria-level="1">Title</h1>
+
+        <a id="see-more" href="#home">
+          <div class="scroll-mouse">
+            <div class="scroll-action"></div>
+          </div>
+        </a>
+      </section>
+      <!--====================
+      END HERO
+      ====================-->
+
+      <!--====================
       SERVICES
       ====================-->
-      <section id="services"></section>
+      <section id="services">
+        <h2 class="section-title" role="heading" aria-level="2">Services</h2>
+      </section>
       <!--====================
       END SERVICES
       ====================-->
@@ -104,7 +127,9 @@
       <!--====================
       TEAM
       ====================-->
-      <section id="team"></section>
+      <section id="team">
+        <h2 class="section-title" role="heading" aria-level="3">Team</h2>
+      </section>
       <!--====================
       END TEAM
       ====================-->
@@ -112,7 +137,9 @@
       <!--====================
       ABOUT
       ====================-->
-      <section id="about"></section>
+      <section id="about">
+        <h2 class="section-title" role="heading" aria-level="4">About</h2>
+      </section>
       <!--====================
       END ABOUT
       ====================-->
@@ -120,7 +147,9 @@
       <!--====================
       CONTACT
       ====================-->
-      <section id="contact"></section>
+      <section id="contact">
+        <h2 class="section-title" role="heading" aria-level="5">Contact</h2>
+      </section>
       <!--====================
       END CONTACT
       ====================-->
@@ -130,7 +159,9 @@
       <!--====================
       CATEGORIES
       ====================-->
-      <section id="categories"></section>
+      <section id="categories">
+        <h2 class="section-title" role="heading" aria-level="6">Categories</h2>
+      </section>
       <!--====================
       END CATEGORIES
       ====================-->
