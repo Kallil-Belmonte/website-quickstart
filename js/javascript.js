@@ -1,14 +1,18 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
   const { from: toArray } = Array;
 
+  const select = selector => document.querySelector(selector);
+  const selectAll = selector => document.querySelectorAll(selector);
+
+  // ANIMATE ELEMENTS
   const animateElements = () => {
     const animate = (selector, animateClass, showOnLoad) => {
-      const rect = document.querySelector(selector).getBoundingClientRect();
+      const rect = select(selector).getBoundingClientRect();
       const isElementVisible = rect.top < window.innerHeight && rect.bottom >= 0;
-      const elementWasNotAnimated = !toArray(document.querySelector(selector).classList).includes(animateClass);
+      const elementWasNotAnimated = !toArray(select(selector).classList).includes(animateClass);
 
       if (showOnLoad || (isElementVisible && elementWasNotAnimated)) {
-        toArray(document.querySelectorAll(selector)).forEach(element => {
+        toArray(selectAll(selector)).forEach(element => {
           element.classList.add(animateClass);
         });
       }
@@ -21,8 +25,9 @@
     };
   };
 
+  // GET CURRENT YEAR
   const getCurrentYear = () => {
-    toArray(document.querySelectorAll('.current-year')).forEach(element => {
+    toArray(selectAll('.current-year')).forEach(element => {
       element.textContent = new Date().getFullYear();
     });
   };
