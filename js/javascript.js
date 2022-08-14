@@ -16,7 +16,7 @@ const themeFunctions = {
 
   // INIT
   init: () => {
-    this.tooltips();
+    themeFunctions.tooltips();
   },
 };
 
