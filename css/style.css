@@ -560,6 +560,10 @@ GENERAL
   }
 }
 
+[aria-hidden='true'] {
+  display: none !important;
+}
+
 /* FONTS */
 
 /* NOME DA FONTE */
