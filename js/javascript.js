@@ -246,10 +246,6 @@ function menuDisplayOnScroll() {
   }
 }
 
-// Captura o ano atual e preenche a classe css 'current-year' com ele
-var currentYear = new Date().getFullYear();
-$('footer .current-year').text(currentYear);
-
 // Scroll suave para quando a pessoa clicar no ícone de 'Ver mais'
 $('#see-more').on('click', function (e) {
   e.preventDefault();
