@@ -8,14 +8,14 @@ let menuHeight = $('.main-menu').outerHeight();
 //==============================
 const themeFunctions = {
   // TOOLTIPS
-  tooltips: function () {
-    $(function () {
+  tooltips: () => {
+    $(() => {
       $('[data-toggle="tooltip"]').tooltip();
     });
   },
 
   // INIT
-  init: function () {
+  init: () => {
     this.tooltips();
   },
 };
@@ -153,27 +153,27 @@ var customizeForDevice = function () {
 // Media query
 
 // Para quando a página é carregada
-let mediaQuery = window.matchMedia('(min-width: 500px)');
+// const mediaQuery = window.matchMedia('(min-width: 500px)');
 
-if (mediaQuery.matches) {
-  // A janela é pelo menos 500px
-} else {
-  // A janela é menor que 500px
-}
+// if (mediaQuery.matches) {
+//   // A janela é pelo menos 500px
+// } else {
+//   // A janela é menor que 500px
+// }
 
 // Para quando houver a necessidade de detectar o redimensionamento da janela
-let mediaQuery = window.matchMedia('(min-width: 500px)');
+// const mediaQuery = window.matchMedia('(min-width: 500px)');
 
-function widthChange(mediaQuery) {
-  if (mediaQuery.matches) {
-    // A janela é 500px ou maior
-  } else {
-    // A janela é menor que 500px
-  }
-}
+// function widthChange(mediaQuery) {
+//   if (mediaQuery.matches) {
+//     // A janela é 500px ou maior
+//   } else {
+//     // A janela é menor que 500px
+//   }
+// }
 
-widthChange(mediaQuery);
-mediaQuery.addListener(widthChange);
+// widthChange(mediaQuery);
+// mediaQuery.addListener(widthChange);
 
 // Toggle do menu hamburguer
 $('.hamburger').click(function () {
