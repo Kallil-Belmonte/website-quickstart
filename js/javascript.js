@@ -1,59 +1,31 @@
-﻿//==============================
-// GLOBAL VARIABLES
-//==============================
-let menuHeight = $('.main-menu').outerHeight();
+﻿document.addEventListener('DOMContentLoaded', () => {
+  const { from: toArray } = Array;
 
-//==============================
-// THEME FUNCTIONS
-//==============================
-const themeFunctions = {
-  // TOOLTIPS
-  tooltips: () => {
-    $(() => {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  },
+  const animateElements = () => {
+    const animate = (selector, animateClass, showOnLoad) => {
+      const rect = document.querySelector(selector).getBoundingClientRect();
+      const isElementVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+      const elementWasNotAnimated = !toArray(document.querySelector(selector).classList).includes(animateClass);
+
+      if (showOnLoad || (isElementVisible && elementWasNotAnimated)) {
+        toArray(document.querySelectorAll(selector)).forEach(element => {
+          element.classList.add(animateClass);
+        });
+      }
+    };
+
+    animate('#hero #see-more', 'fadeIn', true);
+
+    window.onscroll = () => {
+      animate('#services .section-title', 'fadeIn');
+    };
+  };
 
   // INIT
-  init: () => {
-    themeFunctions.tooltips();
-  },
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  themeFunctions.init();
+  animateElements();
 });
 
 // SNIPPETS
-
-// Função para adicionar animação a um elemento (baseado no plugin Animate.css e requer o plugin Waypoints)
-
-// Só aparecer
-function effectEntrance(elementItem, effect, delay) {
-  $(elementItem).waypoint(
-    function () {
-      setTimeout(function () {
-        $(elementItem).addClass(effect);
-      }, delay);
-    },
-    { offset: 'bottom-in-view' },
-  );
-}
-
-// Aparecer e desaparecer os elementos da tela (http://imakewebthings.com/waypoints/shortcuts/inview/)
-function effectEntrance(elementItem, effect, delay) {
-  var waypointInview = new Waypoint.Inview({
-    element: $(elementItem)[0],
-    entered: function (direction) {
-      setTimeout(function () {
-        $(elementItem).addClass(effect);
-      }, delay);
-    },
-    exited: function (direction) {
-      $(elementItem).removeClass(effect);
-    },
-  });
-}
 
 // Desabilita o scroll do mapa e habilita quando ele é clicado
 function iframeEnabling() {
