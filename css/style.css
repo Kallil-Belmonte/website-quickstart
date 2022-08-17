@@ -1151,16 +1151,16 @@ HEADER
   bottom: -10px;
 }
 
-#menu-button.active .box .inner {
+#menu-button[aria-expanded='true'] .box .inner {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
-#menu-button.active .box .inner::before {
+#menu-button[aria-expanded='true'] .box .inner::before {
   transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
   opacity: 0;
 }
 
-#menu-button.active .box .inner::after {
+#menu-button[aria-expanded='true'] .box .inner::after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 
