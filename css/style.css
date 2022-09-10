@@ -474,6 +474,7 @@ GENERAL
 
 @font-face {
   font-family: 'Nome da Fonte';
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/webfont.eot'); /* IE9 Compat Modes */
   src: url('../assets/fonts/nome-da-fonte/webfont.eot?#iefix') format('embedded-opentype'),
     /* IE6-IE8 */ url('../assets/fonts/nome-da-fonte/webfont.woff2') format('woff2'),
@@ -489,6 +490,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 100;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-ultralight-webfont.woff');
 }
 
@@ -497,6 +499,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 200;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-thin-webfont.woff');
 }
 
@@ -505,6 +508,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 400;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-regular-webfont.woff');
 }
 
@@ -513,6 +517,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 500;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-medium-webfont.woff');
 }
 
@@ -521,6 +526,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 600;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-semibold-webfont.woff');
 }
 
@@ -529,6 +535,7 @@ GENERAL
 @font-face {
   font-family: 'San Francisco';
   font-weight: 700;
+  font-display: swap;
   src: url('../assets/fonts/nome-da-fonte/nome-da-fonte-bold-webfont.woff');
 }
 
