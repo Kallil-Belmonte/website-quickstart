@@ -1,0 +1,36 @@
+@mixin size($width, $height, $radius: '') {
+  width: $width;
+  height: $height;
+  @if $radius != '' {
+    border-radius: $radius;
+  }
+}
+
+@mixin square($size, $radius: '') {
+  width: $size;
+  height: $size;
+  @if $radius != '' {
+    border-radius: $radius;
+  }
+}
+
+@mixin bg-image($url, $attachment: fixed, $size: cover) {
+  background: url($url) no-repeat center center $attachment;
+  background-size: $size;
+}
+
+@mixin position(
+  $position: static,
+  $top: auto,
+  $right: auto,
+  $bottom: auto,
+  $left: auto,
+  $z-index: auto
+) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z-index;
+}

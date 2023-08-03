@@ -1,0 +1,345 @@
+﻿/*
+GRID
+Extra small (xs): <576px
+Small (sm): ≥576px
+Medium (md): ≥768px
+Large (lg): ≥992px
+Extra large (xl): ≥1200px
+Extra extra large (xxl): ≥1400px
+*/
+
+/*==============================
+HELPER CLASSES
+==============================*/
+
+// TEXT CONTINUED
+.text-continued {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// CENTER
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Horizontal center
+.center-absolute-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Vertical center
+.center-absolute-y {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// BACKGROUND IMAGE
+.bg-image-contain,
+.bg-image-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// Contain
+.bg-image-contain {
+  background-size: contain;
+}
+
+// Cover
+.bg-image-cover {
+  background-size: cover;
+}
+
+// DISABLES CURSOR ACTIONS ON THE ELEMENT
+.disabled-cursor {
+  pointer-events: none;
+}
+
+/*============================== LAYOUT ==============================*/
+/*==============================
+GENERAL
+==============================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+[aria-hidden='true'] {
+  display: none !important;
+}
+
+// FONTS
+
+// FONT NAME
+@font-face {
+  font-family: 'Font Name';
+  font-display: swap;
+  src: url('/fonts/font-name/webfont.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/font-name/webfont.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/font-name/webfont.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/font-name/webfont.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('/fonts/font-name/webfont.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('/fonts/font-name/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// FONT NAME
+
+// Ultra Light
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 100;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-ultralight-webfont.woff');
+}
+
+// Thin
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 200;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-thin-webfont.woff');
+}
+
+// Regular
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-regular-webfont.woff');
+}
+
+// Medium
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-medium-webfont.woff');
+}
+
+// Semi Bold
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-semibold-webfont.woff');
+}
+
+// Bold
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/font-name/font-name-bold-webfont.woff');
+}
+
+// BODY
+body {
+  font-family: 'Nome da Fonte', Arial, sans-serif;
+}
+
+// SCROLLBAR
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c1c8cc;
+}
+
+// LINKS
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+// FORMS
+
+// Textarea
+textarea {
+  max-width: 100%;
+}
+
+/*==============================
+HEADER
+==============================*/
+
+// MENU
+#menu-button {
+  font: inherit;
+  text-transform: none;
+  color: inherit;
+  display: inline-block;
+  box-sizing: content-box;
+  height: 25px;
+  padding: 15px;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+}
+
+#menu-button:hover {
+  opacity: 0.7;
+}
+
+#menu-button * {
+  pointer-events: none;
+}
+
+#menu-button .box {
+  display: inline-block;
+  width: 30px;
+  height: 100%;
+  position: relative;
+}
+
+#menu-button .box .inner {
+  display: block;
+  margin-top: -2px;
+  top: 2px;
+}
+
+#menu-button .box .inner,
+#menu-button .box .inner::before,
+#menu-button .box .inner::after {
+  width: 100%;
+  height: 2px;
+  background-color: #32393f;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+#menu-button .box .inner::before,
+#menu-button .box .inner::after {
+  content: '';
+  display: block;
+}
+
+#menu-button .box .inner::before {
+  top: 10px;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+}
+
+#menu-button .box .inner::after {
+  top: 20px;
+  bottom: -10px;
+}
+
+#menu-button[aria-expanded='true'] .box .inner {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+#menu-button[aria-expanded='true'] .box .inner::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+
+#menu-button[aria-expanded='true'] .box .inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-90deg);
+}
+
+header {
+}
+
+/*==============================
+BODY
+==============================*/
+
+// PAGE SECTION
+.page-section {
+  box-sizing: content-box;
+  padding: 100px 0;
+}
+
+// TITLE
+.page-title {
+}
+
+.page-subtitle {
+}
+
+.section-title {
+}
+
+.section-subtitle {
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+footer {
+}
+
+// SOCIAL NETWORKS
+.social-networks a {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.social-networks a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// Facebook
+.social-networks a[href*='facebook.com']::before {
+  background-image: url('/icons/facebook.svg');
+}
+
+// Twitter
+.social-networks a[href*='twitter.com']::before {
+  background-image: url('/icons/twitter.svg');
+}
+
+// Instagram
+.social-networks a[href*='instagram.com']::before {
+  background-image: url('/icons/instagram.svg');
+}
+
+// Linkedin
+.social-networks a[href*='linkedin.com']::before {
+  background-image: url('/icons/linkedin.svg');
+}
+
+/*============================== HOME PAGE ==============================*/

@@ -1,0 +1,77 @@
+// GENERAL
+
+%text-continued {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// FLEX CENTER
+
+%flex-center,
+%flex-center-y,
+%flex-center-x {
+  display: flex;
+}
+
+%inline-flex-center,
+%inline-flex-center-y,
+%inline-flex-center-x {
+  display: inline-flex;
+}
+
+%flex-center,
+%inline-flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-center-y,
+%inline-flex-center-y {
+  align-items: center;
+}
+
+%flex-center-x,
+%inline-flex-center-x {
+  justify-content: center;
+}
+
+// ABSOLUTE CENTER
+
+%absolute-center,
+%absolute-center-y,
+%absolute-center-x {
+  position: absolute;
+}
+
+%absolute-center {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+%absolute-center-y {
+  top: 50%;
+  translate: 0 -50%;
+}
+
+%absolute-center-x {
+  left: 50%;
+  translate: -50% 0;
+}
+
+// BACKGROUND IMAGE
+
+%background-image-contain,
+%background-image-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+%background-image-contain {
+  background-size: contain;
+}
+
+%background-image-cover {
+  background-size: cover;
+}
