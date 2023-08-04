@@ -11,15 +11,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-          @import "src/scss/helpers/_helpers.scss";
-          @import "src/scss/frameworks/frameworks.scss";
-          @import "src/scss/plugins/_plugins.scss";
-        `,
-      },
-    },
-  },
 });
