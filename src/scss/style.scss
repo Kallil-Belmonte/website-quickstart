@@ -86,10 +86,6 @@ GENERAL
   }
 }
 
-[aria-hidden='true'] {
-  display: none !important;
-}
-
 // FONTS
 
 // FONT NAME
@@ -173,6 +169,11 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #c1c8cc;
+}
+
+// ATTRIBUTES
+[aria-hidden='true'] {
+  display: none !important;
 }
 
 // LINKS
