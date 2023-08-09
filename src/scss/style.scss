@@ -161,14 +161,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  @include square(8px);
   background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #c1c8cc;
+
+  &:active {
+    background-color: $primary;
+  }
 }
 
 // ATTRIBUTES
