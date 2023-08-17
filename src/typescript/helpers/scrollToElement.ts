@@ -2,7 +2,7 @@
  * @function scrollToElement
  * @description Scrolls to a specific element.
  * @param { string } selector - Selector used to find the element.
- * @param { ScrollBehavior } behavior - Scroll behavior.
+ * @param { ScrollBehavior } [behavior='smooth'] - Scroll behavior.
  */
 
 const scrollToElement = <Type extends HTMLElement>(
