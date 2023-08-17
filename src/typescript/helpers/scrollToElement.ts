@@ -1,6 +1,6 @@
 /**
  * @function scrollToElement
- * @description Checks the user device.
+ * @description Scrolls to a specific element.
  * @param { string } selector - Selector used to find the element.
  * @param { ScrollBehavior } behavior - Scroll behavior.
  */
