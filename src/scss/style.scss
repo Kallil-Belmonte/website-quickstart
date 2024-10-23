@@ -1,6 +1,6 @@
-﻿@import './helpers/_helpers.scss';
-@import './frameworks/frameworks';
-@import './plugins/_plugins.scss';
+﻿@use '@/scss/helpers' as *;
+@use '@/scss/frameworks' as *;
+@use '@/scss/plugins' as *;
 
 /*
 GRID
