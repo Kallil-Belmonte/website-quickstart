@@ -1,0 +1,16 @@
+{
+	"tasks": {
+		"dev": "deno run -A --node-modules-dir npm:vite --host",
+		"build": "deno run -A --node-modules-dir npm:vite build",
+		"preview": "deno run -A --node-modules-dir npm:vite preview",
+		"serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+	},
+	"imports": {
+		"@biomejs/biome": "npm:@biomejs/biome@1.9.4",
+		"@deno/vite-plugin": "npm:@deno/vite-plugin@1.0.0",
+		"sass-embedded": "npm:sass-embedded@1.80.3",
+		"typescript": "npm:typescript@5.6.3",
+		"vite": "npm:vite@5.4.10",
+		"vite-plugin-biome": "npm:vite-plugin-biome@1.0.12"
+	}
+}

@@ -1,24 +1,4 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": false,
-    "strict": true,
-    "target": "ESNext",
-    "useDefineForClassFields": true
-  },
-  "include": ["src"],
-  "exclude": ["node_modules"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.config.json" }]
 }

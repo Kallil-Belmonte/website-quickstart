@@ -1,10 +1,16 @@
 import { defineConfig } from 'vite';
-import * as path from 'node:path';
+import biome from 'vite-plugin-biome';
+import deno from '@deno/vite-plugin';
 
 export default defineConfig({
   server: {
     host: true,
     port: 3000,
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
   },
   css: {
     preprocessorOptions: {
@@ -13,9 +19,5 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+  plugins: [biome(), deno()],
 });
