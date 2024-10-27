@@ -27,14 +27,8 @@
     "enabled": true,
     "rules": {
       "recommended": false,
-      "complexity": {
-        "noForEach": "off"
-      },
       "style": {
         "useImportType": "error"
-      },
-      "suspicious": {
-        "noExplicitAny": "off"
       }
     }
   },
