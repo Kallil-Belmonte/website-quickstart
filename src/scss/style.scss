@@ -1,6 +1,6 @@
-﻿@use '@/scss/helpers' as *;
-@use '@/scss/frameworks' as *;
-@use '@/scss/plugins' as *;
+﻿@use "@/scss/helpers" as *;
+@use "@/scss/frameworks" as *;
+@use "@/scss/plugins" as *;
 
 /*
 GRID
@@ -109,73 +109,76 @@ GENERAL
 
 // FONT NAME
 @font-face {
-  font-family: 'Font Name';
+  font-family: "Font Name";
   font-display: swap;
-  src: url('/fonts/font-name/webfont.eot'); /* IE9 Compat Modes */
-  src: url('/fonts/font-name/webfont.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('/fonts/font-name/webfont.woff2') format('woff2'),
-    /* Super Modern Browsers */ url('/fonts/font-name/webfont.woff') format('woff'),
-    /* Pretty Modern Browsers */ url('/fonts/font-name/webfont.ttf') format('truetype'),
-    /* Safari, Android, iOS */ url('/fonts/font-name/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url("/fonts/font-name/webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/font-name/webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/font-name/webfont.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/font-name/webfont.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("/fonts/font-name/webfont.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/font-name/webfont.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
 }
 
 // FONT NAME
 
 // Ultra Light
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 100;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-ultralight-webfont.woff');
+  src: url("/fonts/font-name/font-name-ultralight-webfont.woff");
 }
 
 // Thin
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 200;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-thin-webfont.woff');
+  src: url("/fonts/font-name/font-name-thin-webfont.woff");
 }
 
 // Regular
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-regular-webfont.woff');
+  src: url("/fonts/font-name/font-name-regular-webfont.woff");
 }
 
 // Medium
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-medium-webfont.woff');
+  src: url("/fonts/font-name/font-name-medium-webfont.woff");
 }
 
 // Semi Bold
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-semibold-webfont.woff');
+  src: url("/fonts/font-name/font-name-semibold-webfont.woff");
 }
 
 // Bold
 @font-face {
-  font-family: 'San Francisco';
+  font-family: "San Francisco";
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/font-name/font-name-bold-webfont.woff');
+  src: url("/fonts/font-name/font-name-bold-webfont.woff");
 }
 
 // BODY
 body {
-  font-family: 'Font Name', Arial, sans-serif;
+  font-family: "Font Name", Arial, sans-serif;
 }
 
 // ATTRIBUTES
-[aria-hidden='true'] {
+[aria-hidden="true"] {
   display: none !important;
 }
 
@@ -252,7 +255,7 @@ HEADER
 
 #menu-button .box .inner::before,
 #menu-button .box .inner::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -268,16 +271,16 @@ HEADER
   bottom: -10px;
 }
 
-#menu-button[aria-expanded='true'] .box .inner {
+#menu-button[aria-expanded="true"] .box .inner {
   transform: translate3d(0, 10px, 0) rotate(45deg);
 }
 
-#menu-button[aria-expanded='true'] .box .inner::before {
+#menu-button[aria-expanded="true"] .box .inner::before {
   transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
   opacity: 0;
 }
 
-#menu-button[aria-expanded='true'] .box .inner::after {
+#menu-button[aria-expanded="true"] .box .inner::after {
   transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
 
@@ -323,7 +326,7 @@ footer {
 }
 
 .social-networks a::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 100%;
@@ -333,23 +336,23 @@ footer {
 }
 
 // Facebook
-.social-networks a[href*='facebook.com']::before {
-  background-image: url('/icons/facebook.svg');
+.social-networks a[href*="facebook.com"]::before {
+  background-image: url("/icons/facebook.svg");
 }
 
 // Twitter
-.social-networks a[href*='twitter.com']::before {
-  background-image: url('/icons/twitter.svg');
+.social-networks a[href*="twitter.com"]::before {
+  background-image: url("/icons/twitter.svg");
 }
 
 // Instagram
-.social-networks a[href*='instagram.com']::before {
-  background-image: url('/icons/instagram.svg');
+.social-networks a[href*="instagram.com"]::before {
+  background-image: url("/icons/instagram.svg");
 }
 
 // Linkedin
-.social-networks a[href*='linkedin.com']::before {
-  background-image: url('/icons/linkedin.svg');
+.social-networks a[href*="linkedin.com"]::before {
+  background-image: url("/icons/linkedin.svg");
 }
 
 /*============================== HOME PAGE ==============================*/
