@@ -6,13 +6,13 @@
  */
 
 // Version 1
-// const checkDevice = (mobileCallback: () => void, desktopCallback: () => void) => {
-//   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//     mobileCallback();
-//   } else {
-//     desktopCallback();
-//   }
-// };
+const checkDevice = (mobileCallback: () => void, desktopCallback: () => void) => {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    mobileCallback();
+  } else {
+    desktopCallback();
+  }
+};
 
 // Version 2
 // const checkDevice = (mobileCallback: () => void, desktopCallback: () => void) => {
@@ -54,4 +54,4 @@
 //   }
 // };
 
-// export default checkDevice;
+export default checkDevice;
