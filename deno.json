@@ -1,13 +1,27 @@
 {
   "tasks": {
-    "dev": "deno run -A --node-modules-dir npm:vite --host",
-    "build": "deno run -A --node-modules-dir npm:vite build",
-    "preview": "deno run -A --node-modules-dir npm:vite preview",
-    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+    "dev": {
+      "command": "deno run -A --node-modules-dir npm:vite --host",
+      "description": "Start the server"
+    },
+    "build": {
+      "command": "deno run -A --node-modules-dir npm:vite build",
+      "description": "Build the app"
+    },
+    "preview": {
+      "command": "deno run -A --node-modules-dir npm:vite preview",
+      "description": "Preview the built app",
+      "dependencies": ["build"]
+    },
+    "serve": {
+      "command": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/",
+      "description": "Serve the built app using Deno file server",
+      "dependencies": ["build"]
+    }
   },
   "imports": {
-    "@deno/vite-plugin": "npm:@deno/vite-plugin@1.0.1",
-    "oxlint": "npm:oxlint@0.14.0",
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@1.0.2",
+    "oxlint": "npm:oxlint@0.15.0",
     "sass-embedded": "npm:sass-embedded@1.82.0",
     "typescript": "npm:typescript@5.7.2",
     "vite": "npm:vite@6.0.3",
