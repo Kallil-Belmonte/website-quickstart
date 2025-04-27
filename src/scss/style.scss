@@ -1,8 +1,8 @@
-﻿@use './helpers' as *;
+﻿@use 'helpers' as *;
 
-@forward './frameworks';
-@forward './plugins';
-@forward './utils';
+@forward 'frameworks';
+@forward 'plugins';
+@forward 'utils';
 
 /*
 GRID
