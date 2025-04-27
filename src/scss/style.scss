@@ -1,8 +1,8 @@
-﻿@use '@/scss/helpers' as *;
+﻿@use './helpers' as *;
 
-@forward '@/scss/frameworks';
-@forward '@/scss/plugins';
-@forward '@/scss/utils';
+@forward './frameworks';
+@forward './plugins';
+@forward './utils';
 
 /*
 GRID
