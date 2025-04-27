@@ -1,0 +1,13 @@
+@use '@/assets/scss/helpers' as *;
+
+.absolute-center {
+  @extend %absolute-center;
+}
+
+.absolute-vertical-center {
+  @extend %absolute-vertical-center;
+}
+
+.absolute-horizontal-center {
+  @extend %absolute-horizontal-center;
+}
