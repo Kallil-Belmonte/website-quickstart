@@ -12,12 +12,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: 'modern-compiler',
-      },
-    },
-  },
   plugins: [oxlintPlugin({ path: 'src' }), deno()],
 });
