@@ -1,166 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!-- https://www.w3schools.com/tags/ref_language_codes.asp -->
-<!-- https://www.w3schools.com/tags/ref_country_codes.asp -->
+  <!-- https://www.w3schools.com/tags/ref_language_codes.asp -->
+  <!-- https://www.w3schools.com/tags/ref_country_codes.asp -->
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Description (max 150 characters)" />
-  <meta name="theme-color" content="#000000" /> <!-- Primary color here -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Description (max 150 characters)" />
+    <meta name="theme-color" content="#000000" />
+    <!-- Primary color here -->
 
-  <!-- FAVICON -->
-  <!-- Generators: http://iconogen.com ou http://realfavicongenerator.net -->
+    <!-- FAVICON -->
+    <!-- Generators: http://iconogen.com ou http://realfavicongenerator.net -->
 
-  <!-- FACEBOOK / OPEN GRAPH -->
-  <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <!-- Open Graph: http://ogp.me/ -->
-  <meta property="fb:app_id" content="123456789" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Website Name" />
-  <meta property="og:url" content="https://example.com/page.html" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Page title" />
-  <meta property="og:description" content="Page description" />
-  <meta property="og:image" content="http://example.com/image.jpg" />
-  <!-- Minimum 200x200px, Minimum Recommended 600x315px, Recommended 1200x630px (or greater proportionately)-->
-  <meta property="og:image:secure_url" content="https://example.com/image.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <!--image/jpeg, image/gif ou image/png-->
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+    <!-- FACEBOOK / OPEN GRAPH -->
+    <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
+    <!-- Open Graph: http://ogp.me/ -->
+    <meta property="fb:app_id" content="123456789" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Website Name" />
+    <meta property="og:url" content="https://example.com/page.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Page title" />
+    <meta property="og:description" content="Page description" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <!-- Minimum 200x200px, Minimum Recommended 600x315px, Recommended 1200x630px (or greater proportionately)-->
+    <meta property="og:image:secure_url" content="https://example.com/image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <!--image/jpeg, image/gif ou image/png-->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-  <title>Website Name | Slogan</title>
+    <title>Website Name | Slogan</title>
 
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" media="screen" />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+      media="screen"
+    />
 
-  <!-- CSS & JAVASCRIPT -->
-  <script type="module" src="/src/main.ts" defer></script>
-</head>
+    <!-- CSS & JAVASCRIPT -->
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
 
-<body>
-  <!--====================
+  <body>
+    <!--====================
   HEADER
   ====================-->
-  <header>
-    <div class="container">
-      <div class="menu flex-vertical-center" role="menu" aria-labelledby="menu-button">
-        <!-- <img class="logo" alt="Mysterity" src="/images/logotype.svg" /> -->
+    <header>
+      <div class="container">
+        <div id="menu" role="menu">
+          <!-- <img class="logo" alt="Mysterity" src="/images/logotype.svg" /> -->
 
-        <nav id="nav-items" aria-labelledby="menu-button">
-          <a href="#" role="menuitem">Item</a>
-          <a href="#" role="menuitem">Item</a>
-        </nav>
-        <button id="menu-button" type="button" aria-label="Menu" aria-controls="nav-items" aria-expanded="false">
-          <div class="box">
-            <div class="inner"></div>
-          </div>
-        </button>
+          <nav id="nav-items" aria-labelledby="menu-button">
+            <a href="#" role="menuitem">Item</a>
+            <a href="#" role="menuitem">Item</a>
+          </nav>
+          <button id="menu-button" type="button" aria-label="Menu" aria-expanded="false">
+            <div class="box">
+              <div class="inner"></div>
+            </div>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <!--====================
+    </header>
+    <!--====================
   END HEADER
   ====================-->
 
-  <main>
-    <!--====================
+    <main>
+      <!--====================
     HERO
     ====================-->
-    <section id="hero">
-      <h1>Title</h1>
+      <section id="hero">
+        <h1>Title</h1>
 
-      <a id="see-more" aria-label="Home" href="#home">
-        <div class="scroll-mouse">
-          <div class="scroll-action"></div>
-        </div>
-      </a>
-    </section>
-    <!--====================
+        <a id="see-more" aria-label="Home" href="#home">
+          <div class="scroll-mouse">
+            <div class="scroll-action"></div>
+          </div>
+        </a>
+      </section>
+      <!--====================
     END HERO
     ====================-->
 
-    <!--====================
+      <!--====================
     SERVICES
     ====================-->
-    <section id="services">
-      <h2 class="section-title">Services</h2>
-    </section>
-    <!--====================
+      <section id="services">
+        <h2 class="section-title">Services</h2>
+      </section>
+      <!--====================
     END SERVICES
     ====================-->
 
-    <!--====================
+      <!--====================
     TEAM
     ====================-->
-    <section id="team">
-      <h2 class="section-title">Team</h2>
-    </section>
-    <!--====================
+      <section id="team">
+        <h2 class="section-title">Team</h2>
+      </section>
+      <!--====================
     END TEAM
     ====================-->
 
-    <!--====================
+      <!--====================
     ABOUT
     ====================-->
-    <section id="about">
-      <h2 class="section-title">About</h2>
-    </section>
-    <!--====================
+      <section id="about">
+        <h2 class="section-title">About</h2>
+      </section>
+      <!--====================
     END ABOUT
     ====================-->
 
-    <!--====================
+      <!--====================
     CONTACT
     ====================-->
-    <section id="contact">
-      <h2 class="section-title">Contact</h2>
-    </section>
-    <!--====================
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+      </section>
+      <!--====================
     END CONTACT
     ====================-->
-  </main>
+    </main>
 
-  <aside>
-    <!--====================
+    <aside>
+      <!--====================
     CATEGORIES
     ====================-->
-    <section id="categories">
-      <h2 class="section-title">Categories</h2>
-    </section>
-    <!--====================
+      <section id="categories">
+        <h2 class="section-title">Categories</h2>
+      </section>
+      <!--====================
     END CATEGORIES
     ====================-->
-  </aside>
+    </aside>
 
-  <!--====================
+    <!--====================
   FOOTER
   ====================-->
-  <footer>
-    <nav class="d-flex justify-content-center" aria-label="Social networks">
-      <ul class="social-networks list-inline">
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
-        </li>
-      </ul>
-    </nav>
+    <footer>
+      <nav class="d-flex justify-content-center" aria-label="Social networks">
+        <ul class="social-networks list-inline">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+              >Linkedin</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-    <p class="copyright">© <span class="current-year"></span> Name</p>
-  </footer>
-  <!--====================
+      <p class="copyright">© <span class="current-year"></span> Name</p>
+    </footer>
+    <!--====================
   END FOOTER
   ====================-->
-</body>
-
+  </body>
 </html>
