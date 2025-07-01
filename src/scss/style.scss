@@ -14,6 +14,13 @@ Extra large (xl): ≥1200px
 Extra extra large (xxl): ≥1400px
 */
 
+$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1120px,
+);
+
 /*============================== LAYOUT ==============================*/
 /*==============================
 GENERAL
@@ -144,7 +151,7 @@ HEADER
 ==============================*/
 
 // MENU
-#menu-button {
+.menu-button {
   font: inherit;
   text-transform: none;
   color: inherit;
@@ -160,71 +167,75 @@ HEADER
   transition-property: opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;
-}
 
-#menu-button:hover {
-  opacity: 0.7;
-}
+  &:hover {
+    opacity: 0.7;
+  }
 
-#menu-button * {
-  pointer-events: none;
-}
+  * {
+    pointer-events: none;
+  }
 
-#menu-button .box {
-  display: inline-block;
-  width: 30px;
-  height: 100%;
-  position: relative;
-}
+  .box {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    position: relative;
 
-#menu-button .box .inner {
-  display: block;
-  margin-top: -2px;
-  top: 2px;
-}
+    .inner {
+      display: block;
+      margin-top: -2px;
+      top: 2px;
 
-#menu-button .box .inner,
-#menu-button .box .inner::before,
-#menu-button .box .inner::after {
-  width: 100%;
-  height: 2px;
-  background-color: #32393f;
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-}
+      &,
+      &::before,
+      &::after {
+        width: 100%;
+        height: 2px;
+        background-color: #32393f;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+      }
 
-#menu-button .box .inner::before,
-#menu-button .box .inner::after {
-  content: '';
-  display: block;
-}
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+      }
 
-#menu-button .box .inner::before {
-  top: 10px;
-  transition-property: transform, opacity;
-  transition-timing-function: ease;
-  transition-duration: 0.15s;
-}
+      &::before {
+        top: 10px;
+        transition-property: transform, opacity;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+      }
 
-#menu-button .box .inner::after {
-  top: 20px;
-  bottom: -10px;
-}
+      &::after {
+        bottom: -10px;
+        top: 20px;
+      }
+    }
+  }
 
-#menu-button[aria-expanded='true'] .box .inner {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
-}
+  &[aria-expanded='true'] {
+    .box {
+      .inner {
+        transform: translate3d(0, 10px, 0) rotate(45deg);
 
-#menu-button[aria-expanded='true'] .box .inner::before {
-  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-  opacity: 0;
-}
+        &::before {
+          transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+          opacity: 0;
+        }
 
-#menu-button[aria-expanded='true'] .box .inner::after {
-  transform: translate3d(0, -20px, 0) rotate(-90deg);
+        &::after {
+          transform: translate3d(0, -20px, 0) rotate(-90deg);
+        }
+      }
+    }
+  }
 }
 
 header {

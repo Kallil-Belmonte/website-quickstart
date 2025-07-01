@@ -1,5 +1,5 @@
-// import { } from '@/typescript/functions';
+import { menu } from '@/typescript/functions';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Call functions here
+  menu();
 });
