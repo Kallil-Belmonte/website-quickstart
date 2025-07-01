@@ -10,11 +10,13 @@ import { addClass, removeClass, select } from '@/typescript/helpers';
 const menu = () => {
   const isMenuExpanded = () =>
     select(selectors.menu.button).getAttribute('aria-expanded') === 'true';
+
   const openMenu = () => {
     select(selectors.menu.button).setAttribute('aria-expanded', 'true');
     addClass(selectors.menu.navItems, 'open');
     addClass('body', 'overflow-hidden');
   };
+
   const closeMenu = () => {
     select(selectors.menu.button).setAttribute('aria-expanded', 'false');
     removeClass(selectors.menu.navItems, 'open');
