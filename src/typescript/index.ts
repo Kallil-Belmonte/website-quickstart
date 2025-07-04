@@ -1,5 +1,6 @@
-import { menu } from '@/typescript/functions';
+import { menu, setCurrentYear } from '@/typescript/functions';
 
 document.addEventListener('DOMContentLoaded', () => {
   menu();
+  setCurrentYear();
 });
