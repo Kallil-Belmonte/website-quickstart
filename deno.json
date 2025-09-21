@@ -26,10 +26,10 @@
   },
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@1.0.5",
-    "oxlint": "npm:oxlint@1.9.0",
-    "sass-embedded": "npm:sass-embedded@1.89.2",
+    "oxlint": "npm:oxlint@1.16.0",
+    "sass-embedded": "npm:sass-embedded@1.93.0",
     "typescript": "npm:typescript@5.9.2",
-    "vite": "npm:vite@7.0.6",
+    "vite": "npm:vite@7.1.6",
     "vite-plugin-oxlint": "npm:vite-plugin-oxlint@1.4.0"
   }
 }
