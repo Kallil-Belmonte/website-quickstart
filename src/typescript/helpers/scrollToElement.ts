@@ -1,8 +1,8 @@
 /**
  * @function scrollToElement
  * @description Scrolls to a specific element.
- * @param { string } selector - Selector used to find the element.
- * @param { ScrollLogicalPosition } [block='start'] - Scroll position.
+ * @param selector - Selector used to find the element.
+ * @param block - Scroll position.
  */
 
 const scrollToElement = <Type extends HTMLElement>(

@@ -5,9 +5,9 @@ const { from } = Array;
 /**
  * @function animate
  * @description Animates and element.
- * @param { string } selector - Selector used to find the element.
- * @param { string } animateClass - Animation class to add to the element.
- * @param { boolean } showOnLoad - If 'true', the animation class is added immediately and not when the element is visible on the page.
+ * @param selector - Selector used to find the element.
+ * @param animateClass - Animation class to add to the element.
+ * @param showOnLoad - If 'true', the animation class is added immediately and not when the element is visible on the page.
  */
 
 const animate = (selector: string, animateClass: string, showOnLoad: boolean) => {

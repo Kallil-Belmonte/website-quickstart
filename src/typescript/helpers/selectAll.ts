@@ -1,7 +1,7 @@
 /**
  * @function selectAll
  * @description Selects all elements.
- * @param { string } selector - Selector used to find the elements.
+ * @param selector - Selector used to find the elements.
  */
 
 const selectAll = <Type = HTMLElement>(selector: string) =>

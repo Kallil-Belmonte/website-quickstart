@@ -1,8 +1,8 @@
 /**
  * @function checkDevice
  * @description Checks the user device.
- * @param { () => void } mobileCallback - Mobile callback.
- * @param { () => void } desktopCallback - Desktop callback.
+ * @param mobileCallback - Mobile callback.
+ * @param desktopCallback - Desktop callback.
  */
 
 // Version 1
