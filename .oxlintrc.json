@@ -9,6 +9,7 @@
     "eqeqeq": "warn",
     "no-duplicate-imports": "error",
     "no-unsafe-optional-chaining": "warn",
-    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "object-shorthand": "error"
   }
 }
