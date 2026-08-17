@@ -1,5 +1,5 @@
-import deno from '@deno/vite-plugin';
 import { defineConfig } from 'vite';
+import vitePluginChecker from 'vite-plugin-checker';
 import oxlintPlugin from 'vite-plugin-oxlint';
 
 export default defineConfig({
@@ -12,5 +12,8 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  plugins: [oxlintPlugin({ path: 'src' }), deno()],
+  plugins: [
+    oxlintPlugin({ path: 'src' }),
+    vitePluginChecker({ vueTsc: { tsconfigPath: './tsconfig.json', buildMode: true } }),
+  ],
 });
